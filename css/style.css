@@ -19,29 +19,25 @@
 /* ボタンのボックス　共通クラス */
 
 /* ヘッダー */
-header {
+.header {
   background-color: #fff;
+  padding: 15px 0 15px 0;
   position: fixed;
+  top: 0;
   width: 100%;
-}
-
-.header_inner {
-  height: 70px;
-  position: relative;
+  z-index: 2;
 }
 
 .header_icon {
   font-size: 3em;
+  float: left;
   left: 100px;
-  padding: 15px 0 15px 0;
-  position: absolute;
 }
 
 .push_box {
+  float: right;
   padding: 14px 12px;
-  position: absolute;
   right: 100px;
-  top: 10px;
 }
 
 .push_box:hover {
@@ -51,25 +47,36 @@ header {
 /* ヘッダー */
 
 /* メイン */
+
+.main {
+  background-color:	#f2f2f2;
+}
+
 /* boltテーマのボックス */
 
 .theme {
-  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.title_inner h1 {
+.title_inner {
+  margin: 250px 0 250px 0;
+}
+
+.title {
   color: #74cfae;
   font-size: 90px;
-  font-weight: 700;  
-  padding-top: 250px;
+  font-weight: 700;
 }
 
-.title_inner h2 {
+.sub_title {
   color: #c0c0c0;
   font-size: 30px;
   margin-top: 20px;
-  padding-bottom: 250px;
 }
+
+
 /* boltテーマのボックス */
 
 /* sectionのボックス(what we can do)*/
@@ -85,26 +92,24 @@ header {
 }
 
 .section_inner {
-  font-size: 20px;
   padding-top: 50px;
 }
 
 .img_box {
   float: left;
-  width: 500px;
+  margin: 0 100px 0 100px;
 }
 
 .section_inner .text_box {
   color: #fff;
   font-size: 20px;
-  margin: 0 auto;
-  width: 1000px;
+  line-height: 1.5em;
   word-break: break-all;
 }
 
 .section_inner h2 {
   font-size: 24px;
-  padding-bottom: 35px;
+  margin-bottom: 35px;
 }
 
 /* sectionのボックス(what we can do) */
@@ -112,13 +117,9 @@ header {
 
 /* articleのボックス */
 
-article {
-  background-color: #f2f2f2;
-}
-
 .article_inner h2 {
   font-size: 24px;
-  padding: 60px 0 40px 0;
+  padding-top: 60px;
 }
 
 .panel_box {
@@ -136,34 +137,33 @@ article {
 }
 
 .panel_box img:nth-child(-n+3) {
-  padding: 0 0 80px 100px;
+  margin: 40px 0 80px 100px;
 }
 
 .panel_box img:nth-child(n+4) {
-  padding: 0 0 90px 100px;
+  margin: 0 0 90px 100px;
 }
 
 .panel_box img:nth-child(1) {
-  padding-left: 0;
+  margin-left: 0;
 }
 
 .panel_box img:nth-child(4) {
-  padding-left: 0;
+  margin-left: 0;
 }
 
 .content_box {
-  display: inline-block;
+  align-items: center;
+  display: flex;
+  margin: 0 100px 0 100px;
   padding-bottom: 70px;
 }
 
 .content_box .text_box {
-  float: left;
   line-height: normal;
-  width: 500px;
 }
 
 .e-mail_box {
-  float: left;
   margin-left: 90px;
   padding: 14px 20px;
 }
@@ -178,12 +178,14 @@ article {
 
 .second_section {
   background-color: #4e4e4e;
+  text-align: center;
 }
 
 .second_section_inner {
   color: #fff;
+  display: inline-block;
   font-size: 16px;
-  padding-top: 70px;
+  margin-top: 70px;
 }
 
 .round_panel_box {
@@ -203,7 +205,7 @@ article {
 
 .round_panel figcaption {
   font-size: 16px;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 /* sectionのボックス(our skills) */
@@ -211,8 +213,7 @@ article {
 
 /* navのボックス */
 
-nav {
-  background-color: #f2f2f2;
+.nav {
   display: flex;
 }
 
@@ -225,7 +226,7 @@ nav {
 
 .item {
   color: #74cfae;
-  font-size: 5em;
+  font-size: 3em;
 }
 
 .animation_box {
@@ -244,14 +245,15 @@ nav {
 /* メイン */
 
 /* フッター */
-footer {
+.footer {
   background-color: #74cfae;
+  display: inline-block;
+  width: 100%;
 }
 
 .footer_box {
   color: #fff;
-  margin-left: auto;
-  padding: 20px 0 25px 0;
   text-align: right;
+  margin: 20px 0 25px 0;
 }
 /* フッター */
