@@ -1,3 +1,11 @@
+/* フォント */
+body {
+  font-family: 'Raleway';
+}
+
+
+/* フォント */
+
 /* 指定クラス */
 .inner {
   margin: 0 auto;
@@ -62,6 +70,7 @@
 
 .main {
   background-color:	#f2f2f2;
+  padding-top: 78px;
 }
 
 /* boltテーマのボックス */
@@ -73,7 +82,7 @@
 }
 
 .title_inner {
-  padding: 328px 0 250px 0;
+  padding: 250px 250px ;
 }
 
 .title {
@@ -82,7 +91,7 @@
   font-weight: 700;
 }
 
-.sub_title {
+.theme p {
   color: #c0c0c0;
   font-size: 30px;
   margin-top: 20px;
@@ -94,7 +103,7 @@
 /* sectionのボックス(what we can do)*/
 
 
-.first_section {
+.section_primary {
   background-color: #74cfae;
 }
 
@@ -104,13 +113,15 @@
 
 .img_box {
   float: left;
-  margin: 0 100px 0 100px;
+  width: 500px;
 }
 
 .section_inner .text_box {
   color: #fff;
   font-size: 20px;
+  float: left;
   line-height: 1.5em;
+  width: 600px;
   word-break: break-all;
 }
 
@@ -126,6 +137,7 @@
 
 .article_inner {
   padding-top: 60px;
+  padding-bottom: 70px;
 }
 
 .article_inner h2 {
@@ -135,39 +147,36 @@
 .panel_box {
   display: flex;
   flex-wrap: wrap;
-  margin: 40px 0 90px 0;
+  margin-top: 40px;
 }
 
-.panel_box img {
+.panel_box li {
   opacity: 0.7;
 }
 
-.panel_box img:hover {
-  opacity: 1;
+.panel_box li:hover {
   cursor: pointer;
+  opacity: 1;
+  transition: all .3s;
 }
 
-.panel_box a:nth-child(-n+3) {
+.panel_box li:nth-child(n+1) {
   margin: 0 0 80px 100px;
 }
 
-.panel_box a:nth-child(n+4) {
-  margin-left: 100px;
+.panel_box li:nth-child(n+4) {
+  margin-bottom: 90px; 
 }
 
-.panel_box a:nth-child(1) {
-  margin-left: 0;
-}
-
-.panel_box a:nth-child(4) {
+.panel_box li:nth-child(3n+1) {
   margin-left: 0;
 }
 
 .content_box {
   align-items: center;
   display: flex;
-  margin: 0 100px 0 100px;
-  padding-bottom: 70px;
+  margin: 0 auto;
+  width: 700px;
 }
 
 .content_box .text_box {
@@ -187,7 +196,7 @@
 
 /* sectionのボックス(ourskills) */
 
-.second_section {
+.section_secondaly {
   background-color: #4e4e4e;
   text-align: center;
 }
@@ -200,7 +209,6 @@
 }
 
 .round_panel_box {
-  display: inline-block;
   font-size: 0;
   margin-top: 70px;
 }
