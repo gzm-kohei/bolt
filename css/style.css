@@ -13,19 +13,31 @@
   color: #fff;
   cursor: pointer;
   font-size: 12px;
+  text-decoration: none;
   transition: color .3s;
 }
 
 /* ボタンのボックス　共通クラス */
 
 /* ヘッダー */
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .header {
   background-color: #fff;
-  padding: 15px 0 15px 0;
+  left: 0;
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 100;
+}
+
+.header_inner {
+  padding: 15px 0 15px 0;
 }
 
 .header_icon {
@@ -61,7 +73,7 @@
 }
 
 .title_inner {
-  margin: 250px 0 250px 0;
+  padding: 328px 0 250px 0;
 }
 
 .title {
@@ -81,11 +93,6 @@
 
 /* sectionのボックス(what we can do)*/
 
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
-}
 
 .first_section {
   background-color: #74cfae;
@@ -117,38 +124,42 @@
 
 /* articleのボックス */
 
+.article_inner {
+  padding-top: 60px;
+}
+
 .article_inner h2 {
   font-size: 24px;
-  padding-top: 60px;
 }
 
 .panel_box {
   display: flex;
   flex-wrap: wrap;
+  margin: 40px 0 90px 0;
 }
 
 .panel_box img {
-  cursor: pointer;
   opacity: 0.7;
 }
 
 .panel_box img:hover {
   opacity: 1;
+  cursor: pointer;
 }
 
-.panel_box img:nth-child(-n+3) {
-  margin: 40px 0 80px 100px;
+.panel_box a:nth-child(-n+3) {
+  margin: 0 0 80px 100px;
 }
 
-.panel_box img:nth-child(n+4) {
-  margin: 0 0 90px 100px;
+.panel_box a:nth-child(n+4) {
+  margin-left: 100px;
 }
 
-.panel_box img:nth-child(1) {
+.panel_box a:nth-child(1) {
   margin-left: 0;
 }
 
-.panel_box img:nth-child(4) {
+.panel_box a:nth-child(4) {
   margin-left: 0;
 }
 
@@ -184,14 +195,14 @@
 .second_section_inner {
   color: #fff;
   display: inline-block;
-  font-size: 16px;
-  margin-top: 70px;
+  font-size: 24px;
+  padding: 70px 0 100px 0;
 }
 
 .round_panel_box {
   display: inline-block;
   font-size: 0;
-  margin: 70px 0 100px 0;
+  margin-top: 70px;
 }
 
 .round_panel:first-child {
@@ -220,8 +231,7 @@
 .nav_inner {
   display: flex;
   justify-content: center;
-  margin-top: 200px;
-  margin-bottom: 200px;
+  padding: 200px 0 200px 0;
 }
 
 .item {
