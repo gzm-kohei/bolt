@@ -331,6 +331,10 @@ img {
 /* タブレット section_primary*/
 
 @media screen and (max-width:1199px) {
+  .inner {
+    width: 97%;
+  }
+
   .section_inner {
     padding-bottom: 25px;
   }
