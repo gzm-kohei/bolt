@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content="telephone=no">
-    <meta description="This is my portfolio site.">
+    <meta name="description" content="This is my portfolio site.">
     <meta name="Keywords" content="bolt, bootstrap, portfolio" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bolt - Free Bootstrap 3 Theme</title>
@@ -18,18 +18,16 @@
       <div class="inner clearfix header_inner">
         <i class="fas fa-bolt header_icon"></i>
         <a href="" class="push_box">Contact</a>
-        <i class="menu">
-          <label class="menu_inner" for="menu_input"><span></span></label>
-          <!-- <div class="menu_inner"></div>
-          <div class="menu_inner"></div> -->
-        </i>
+        <div class="menu">
+          <span class="menu_inner" for="menu_input"></span>
+        </div>
       </div>
     </header>
     <main class="main">
       <div class="theme">
         <div class="inner title_inner">
             <h1 class="title title_font">Bolt Theme</h1>
-            <p>FREE BOOTSTRAP THEMES</p>
+            <p class="theme_sentence">FREE BOOTSTRAP THEMES</p>
         </div>
       </div>
       <section class="section_primary">
@@ -38,44 +36,48 @@
             <img src="./img/iphone.png" alt="">
           </figure>
           <div class="text_box">
-            <h2 class="title_font">WHAT WE CAN DO?</h2>
-            Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            <h2 class="title_font primary_title">
+              WHAT WE CAN DO?
+            </h2>
+            <div class="primary_sentence">
+              Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </div>
           </div>
         </div>
       </section>
-      <article class="article">
-        <div class="inner article_inner">
-          <h2 class="title_font">OUR LATEST WORK</h2>
+      <article class="photo_box">
+        <div class="inner photo_inner">
+          <h2 class="title_font photo_title">OUR LATEST WORK</h2>
           <ul class="panel_box">
-            <li>
-              <a href="">
+            <li class="panel_inner">
+              <a href="" class="panel_inner_box">
                 <img src="./img/01.jpg" alt="">
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="panel_inner">
+              <a href="" class="panel_inner_box">
                 <img src="./img/02.jpg" alt="">
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="panel_inner">
+              <a href="" class="panel_inner_box">
                 <img src="./img/03.jpg" alt="">
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="panel_inner">
+              <a href="" class="panel_inner_box">
                 <img src="./img/04.jpg" alt="">
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="panel_inner">
+              <a href="" class="panel_inner_box">
                 <img src="./img/05.jpg" alt="">
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="panel_inner">
+              <a href="" class="panel_inner_box">
                 <img src="./img/06.jpg" alt="">
               </a>          
             </li>
@@ -114,21 +116,29 @@
           </div>
         </div>
       </section>
-      <nav class="nav">
-        <div class="inner nav_inner">
-          <a href="" class="animation_box">
-            <i class="fab fa-facebook-f item"></i>
-          </a>
-          <a href="" class="animation_box">
-            <i class="fab fa-dribbble item"></i>
-          </a>
-          <a href="" class="animation_box">
-            <i class="fab fa-twitter item"></i>
-          </a>
-          <a href="" class="animation_box">
-            <i class="fas fa-envelope item"></i>
-          </a>
-        </div>
+      <nav class="icon_box">
+        <ul class="inner nav_inner">
+          <li class="nav_icon">
+            <a href="" class="animation_box">
+              <i class="fab fa-facebook-f item"></i>
+            </a>
+          </li>
+          <li class="nav_icon">
+            <a href="" class="animation_box">
+              <i class="fab fa-dribbble item"></i>
+            </a>
+          </li>
+          <li class="nav_icon">
+            <a href="" class="animation_box">
+              <i class="fab fa-twitter item"></i>
+            </a>  
+          </li>
+          <li class="nav_icon">
+            <a href="" class="animation_box">
+              <i class="fas fa-envelope item"></i>
+            </a>
+          </li>
+        </ul>
       </nav>
     </main>
     <footer class="footer">
