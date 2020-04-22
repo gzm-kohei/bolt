@@ -76,7 +76,7 @@ body {
   box-sizing: border-box;
   content: "";
   cursor: pointer;
-  display: block;
+  display: none;
   float: right;
   height: 40px;
   padding: 10px;
@@ -143,13 +143,12 @@ body {
 }
 
 .section_inner {
+  display: flex;
   padding-top: 50px;
 }
 
 .img_box {
   box-sizing: border-box;
-  float: left;
-  width: 500px;
 }
 
 .text_box {
@@ -158,7 +157,7 @@ body {
   font-size: 20px;
   float: left;
   line-height: 1.5em;
-  width: 600px;
+  margin-left: 100px;
   word-break: break-all;
 }
 
@@ -221,7 +220,6 @@ body {
   display: flex;
   line-height: normal;
   margin: 0 auto;
-  width: 700px;
 }
 
 .e-mail_box {
@@ -260,7 +258,7 @@ body {
   margin-left: 180px;
 }
 
-.round_panel figcaption {
+.round_sentence {
   font-size: 16px;
   margin-top: 20px;
 }
@@ -287,7 +285,7 @@ body {
   box-sizing: border-box;
   padding: 25px 0 25px 0;
   transition: all .3s;
-  width: 185px;
+  width: 25%;
 }
 
 .nav_icon:hover {
@@ -316,11 +314,11 @@ body {
   }
 
   .section_inner {
+    display: block;
     padding-bottom: 25px;
   }
 
   .img_box, .text_box {
-    float: none;
     margin: 0 auto;
   }
   
@@ -331,6 +329,7 @@ body {
 /* タブレット　article*/
   .panel_box {
     display: block;
+    margin-bottom: 0;
   }
 
   .panel_inner {
@@ -377,6 +376,10 @@ body {
     display: none;
   }
 
+  .menu {
+    display: block;
+  }
+
 /* スマホ　theme */
   .title {
     font-size: 80px;
@@ -403,12 +406,5 @@ body {
   }
   .nav_icon {
     width: 100%;
-  }
-}
-
-/* スマホ　header icon */
-@media screen and (min-width:767px) {
-  .menu {
-    display: none;
   }
 }
